@@ -6,7 +6,7 @@ class EasyCSV::DoubleQuoteWrapper
   end
 
   def wrap
-    @row.map{|e| "\"#{escape(e)}\""}
+    @row.map{|e| "\"#{escape(e.to_s)}\""}
   end
 
   private

@@ -17,5 +17,12 @@ describe EasyCSV::DoubleQuoteWrapper do
 
       it { should eq(result) }
     end
+
+    context 'given an array [1, {a: 2}]' do
+      let(:row) { [1, {a: 2}] }
+      let(:result) { ["\"1\"", "\"{:a=>2}\""] }
+
+      it { should eq(result) }
+    end
   end
 end
