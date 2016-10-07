@@ -1,6 +1,6 @@
-require_relative "data"
-require_relative "double_quote_wrapper"
-require_relative "comma_separator"
+require "easycsv/data"
+require "easycsv/double_quote_wrapper"
+require "easycsv/comma_separator"
 
 module EasyCSV
   class Builder

@@ -1,3 +1,3 @@
-Dir["#{File.dirname(__FILE__)}/**/*.rb"].each do |file|
-  require file
+Dir[File.join(File.dirname(__FILE__), 'easycsv', '*.rb')].each do |file|
+  require 'easycsv/' + File.basename(file, '.rb')
 end
